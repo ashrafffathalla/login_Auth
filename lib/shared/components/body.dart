@@ -11,7 +11,9 @@ class Body extends StatelessWidget {
       width: double.infinity,
       child: Stack(
         children: [
-
+          Positioned(
+              child:Image.asset('')
+          ),
         ],
       ),
     );
