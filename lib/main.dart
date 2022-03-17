@@ -19,12 +19,6 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: colors.kPrimaryColor,
         appBarTheme: const AppBarTheme(
-          backwardsCompatibility: false,
-          elevation: 0,
-           systemOverlayStyle: SystemUiOverlayStyle(
-               statusBarColor: Colors.transparent,
-               statusBarIconBrightness: Brightness.dark,
-           ),
         ),
       ),
 
