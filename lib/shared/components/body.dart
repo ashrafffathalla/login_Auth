@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login/screens/login/login_screen.dart';
+import 'package:login/screens/signup/signup_screen.dart';
 import 'package:login/shared/colors.dart';
 import 'package:login/shared/components/Bbckground.dart';
 import 'package:login/shared/components/rounder_button.dart';
@@ -37,7 +38,9 @@ class Body extends StatelessWidget {
             text: "SIGN UP",
             color: kPrimaryLightColor,
             textColor:  kPrimaryColor,
-            press: (){},
+            press: (){ Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return const SignUpScreen();
+            }));},
           ),
         ],
       ),

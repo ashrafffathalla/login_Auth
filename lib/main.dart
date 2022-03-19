@@ -4,7 +4,12 @@ import 'package:login/screens/welcome_screen.dart';
 import 'package:login/shared/colors.dart'as colors;
 
 void main() {
-  runApp(const MyApp());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.dark,
+  ));
+  runApp(
+      const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +25,6 @@ class MyApp extends StatelessWidget {
         primaryColor: colors.kPrimaryColor,
         appBarTheme: const AppBarTheme(
           systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Colors.transparent,
           )
         ),
       ),

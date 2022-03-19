@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:login/screens/signup/signup_screen.dart';
 import 'package:login/shared/colors.dart';
 import 'package:login/shared/components/login/background_login.dart';
 import 'package:login/shared/components/login/rounder_login.dart';
 import 'package:login/shared/components/login/text_field.dart';
 import 'package:login/shared/components/rounder_button.dart';
+
+import 'already_have_an_account.dart';
 
 class LoginBody extends StatelessWidget {
   const LoginBody({
@@ -49,34 +52,24 @@ class LoginBody extends StatelessWidget {
               suffixIcon: Icons.visibility,
               onChange: (value) {},
             ),
+            SizedBox(
+              height: size.height * 0.012,
+            ),
             RounderButton(
-              text: "SIGN UP",
+              text: "LOGIN",
               color: kPrimaryColor,
-              textColor:Colors.white,
-              press: (){},
+              textColor: Colors.white,
+              press: () {},
             ),
             SizedBox(
-              height: size.height * 0.01,
+              height: size.height * 0.03,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children:  [
-                const Text(
-                  "Don't have an account ? ",
-                  style: TextStyle(color: kPrimaryColor),
-                ),
-
-                GestureDetector(
-                  onTap: (){},
-                  child:const Text(
-                    "Sign Up ",
-                    style: TextStyle(
-                      color: kPrimaryColor,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ],
+            AlertHaveAnAccountCheck(
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const SignUpScreen();
+                }));
+              },
             ),
           ],
         ),
