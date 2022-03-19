@@ -9,12 +9,9 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
       body: SignUpBody(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
     );
   }
 }
-

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:login/screens/welcome_screen.dart';
-import 'package:login/shared/colors.dart'as colors;
+import 'package:login/shared/colors.dart' as colors;
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         primaryColor: colors.kPrimaryColor,
         appBarTheme: const AppBarTheme(
-          systemOverlayStyle: SystemUiOverlayStyle(
-          )
+            systemOverlayStyle: SystemUiOverlayStyle(
+            ),
         ),
       ),
 
