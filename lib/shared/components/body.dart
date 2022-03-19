@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login/shared/colors.dart';
 import 'package:login/shared/components/Bbckground.dart';
+import 'package:login/shared/components/rounder_button.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -16,28 +17,26 @@ class Body extends StatelessWidget {
           const Text(
             'WELCOME TO PRO',
           ),
+          SizedBox(height:size.height *0.03),
           SvgPicture.asset(
               'assets/icons/chat.svg',
             height: size.height * 0.45,
           ),
-          const SizedBox(height: 5,),
-          Container(
-            width: size.width *0.8,
-            child: ClipRRect(
-              borderRadius:BorderRadius.circular(29),
-              child: FlatButton(
-                padding:const EdgeInsets.symmetric(vertical: 20.0,horizontal: 40),
-                  onPressed: (){},
-                color: kPrimaryColor,
-                  child:const Text(
-                    'LOGIN',
-                    style: TextStyle(color: Colors.white),
-                  ),
-              ),
-            ),
-          )
+           SizedBox(height:size.height *0.03),
+          RounderButton(
+            press: (){print('HI');},
+            text: "LOGIN",
+          ),
+          RounderButton(
+            text: "LOGIN",
+            color: kPrimaryLightColor,
+            textColor:  kPrimaryColor,
+            press: (){},
+          ),
         ],
       ),
     );
   }
 }
+
+
