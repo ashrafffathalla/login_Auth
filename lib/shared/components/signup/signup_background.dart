@@ -24,7 +24,7 @@ class SignUpBackgroung extends StatelessWidget {
               left: 0,
               child: Image.asset(
                 "assets/images/signup_top.png",
-                width: size.width * 0.37,
+                width: size.width * 0.33,
               ),
             ),
             Positioned(

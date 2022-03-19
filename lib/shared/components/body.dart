@@ -20,6 +20,8 @@ class Body extends StatelessWidget {
             'WELCOME TO APP',
             style: TextStyle(
               color: kPrimaryColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
             ),
           ),
           SizedBox(height:size.height *0.03),
