@@ -19,7 +19,7 @@ class RounderButton extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 10.0),
-      width: size.width *0.8,
+      width: size.width * 0.8,
       child: ClipRRect(
         borderRadius:BorderRadius.circular(29),
         child: FlatButton(
